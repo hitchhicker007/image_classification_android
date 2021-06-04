@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/image_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose an Image first"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_below="@+id/image_label"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_image"
+            />
+
+        <Button
+            android:id="@+id/predict_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@drawable/button"
+            android:text="Predict Image"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
