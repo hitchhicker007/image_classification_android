@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/white"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/history_card_timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timestamp : 06\/05\/2021 05:48:43 pm"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/history_card_output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="output : dog"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/history_card_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="validation : wrong output"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/history_card_correct_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="correct output : cat"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
